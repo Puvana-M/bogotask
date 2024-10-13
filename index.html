@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOGO Offer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>YAY! It's BOGO</h1>
+        <div class="unit-options">
+            <div class="unit-option" id="unit1-box">
+                <input type="radio" name="unit" id="unit1" value="1" checked>
+                <label for="unit1">1 Unit</label>
+                <span class="price">$10.00 USD</span>
+            </div>
+
+            <div class="unit-option expanded" id="unit2-box">
+                <input type="radio" name="unit" id="unit2" value="2">
+                <label for="unit2">2 Units <span class="most-popular">Most Popular</span></label>
+                <span class="price">$18.00 USD</span>
+
+                <div class="dropdowns" id="dropdowns2" style="display: none;">
+                    <div label for="size1">Size</label>
+                    <select id="size1">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                   
+                        <select id="size2">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                        </select>
+                </div>
+                
+
+                    <label for="color1">Colour</label>
+                    <select id="color1">
+                        <option value="Black">Black</option>
+                        <option value="White">White</option>
+                        <option value="Blue">Blue</option>
+                    </select>
+                    
+
+                   
+
+                    <label for="color2"></label>
+                    <select id="color2">
+                        <option value="Black">Black</option>
+                        <option value="White">White</option>
+                        <option value="Blue">Blue</option>
+                    </select>
+                    
+                </div>
+            </div>
+
+            <div class="unit-option" id="unit3-box">
+                <input type="radio" name="unit" id="unit3" value="3">
+                <label for="unit3">3 Units</label>
+                <span class="price">$24.00 USD</span>
+            </div>
+        </div>
+
+        <div class="total">
+            <h6>Free Delivery </h6>
+            <p>Total: <span id="total-price">$10.00 USD</span></p>
+        </div>
+
+        <button id="addToCart">+ Add to Cart</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+ 
